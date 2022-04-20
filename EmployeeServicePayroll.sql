@@ -14,3 +14,5 @@ insert into employee_payroll(Id,Name,Salary,StartDate)values
 (4,'Neha',25000,'2022-04-01');
 
 select * from employee_payroll;
+
+select salary from employee_payroll where Name = 'Yogesh'; 
