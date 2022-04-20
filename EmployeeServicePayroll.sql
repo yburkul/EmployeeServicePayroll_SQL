@@ -15,4 +15,9 @@ insert into employee_payroll(Id,Name,Salary,StartDate)values
 
 select * from employee_payroll;
 
-select salary from employee_payroll where Name = 'Yogesh'; 
+select salary from employee_payroll where Name = 'Yogesh';
+
+alter table employee_payroll
+Add Gender char(1);
+update employee_payroll set Gender = 'M' where Name = 'Yogesh' or Name = 'Arjun';
+update employee_payroll set Gender = 'F' where Name = 'Sayali' or Name = 'Neha';
