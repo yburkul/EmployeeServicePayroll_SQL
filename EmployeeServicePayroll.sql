@@ -47,3 +47,16 @@ update employee_payroll set Phone = 8613780911 where Name = 'Neha';
 
 alter table employee_payroll
 add Deductions bigint, Taxable_Pay bigint,Income_Tax bigint,Net_Pay bigint;
+
+insert into employee_payroll(Id,Name,Salary,StartDate,Gender,Phone,Address,Department,Deductions,Taxable_Pay,Income_Tax,Net_Pay)values
+(5,'Terissa',20000,'2022-04-30','F',7788112233,'Pune','Sales',2000,1000,200,18800),
+(6,'Terissa',30000,'2022-02-10','F',9988012033,'Pune','Marketing',2000,1000,200,26800);
+
+select * from employee_payroll;
+
+update employee_payroll set Deductions = 2000,Taxable_Pay = 1000, Income_Tax =200, Net_Pay = 26800 where Name = 'Yogesh';
+update employee_payroll set Deductions = 2000,Taxable_Pay = 1000, Income_Tax =200, Net_Pay = 18800 where Name = 'Sayali';
+update employee_payroll set Deductions = 2000,Taxable_Pay = 1000, Income_Tax =200, Net_Pay = 36800 where Name = 'Arjun';
+update employee_payroll set Deductions = 2000,Taxable_Pay = 1000, Income_Tax =200, Net_Pay = 21800 where Name = 'Neha';
+
+select * from employee_payroll where Name = 'Terissa';
