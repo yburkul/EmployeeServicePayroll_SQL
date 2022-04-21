@@ -1,5 +1,5 @@
 create database Payroll_Service;
-use Paryoll_Service;
+use Payroll_Service;
 
 create table employee_payroll(
 Id int not null primary key,
@@ -32,3 +32,15 @@ select min(Salary) as Min_Salary_of_Female from employee_payroll where Gender = 
 select min(Salary) as Min_Salary_of_Male from employee_payroll where Gender = 'M' Group by Gender;
 select count(Salary) as count_Female from employee_payroll where Gender = 'F' Group by Gender;
 select count(Salary) as count_Male from employee_payroll where Gender = 'M' Group by Gender;
+
+select * from employee_payroll;
+alter table employee_payroll 
+add Phone varchar(15), Address varchar(100), Department varchar(100);
+
+update employee_payroll set Address = 'Pune';
+update employee_payroll set Department = 'HR' where Name in ('Yogesh','Arjun');
+update employee_payroll set Department = 'Manager' where Name not in ('Yogesh','Arjun');
+update employee_payroll set Phone = 9922100977 where Name = 'Yogesh';
+update employee_payroll set Phone = 8820100907 where Name = 'Sayali';
+update employee_payroll set Phone = 7700144970 where Name = 'Arjun';
+update employee_payroll set Phone = 8613780911 where Name = 'Neha';
