@@ -44,3 +44,6 @@ update employee_payroll set Phone = 9922100977 where Name = 'Yogesh';
 update employee_payroll set Phone = 8820100907 where Name = 'Sayali';
 update employee_payroll set Phone = 7700144970 where Name = 'Arjun';
 update employee_payroll set Phone = 8613780911 where Name = 'Neha';
+
+alter table employee_payroll
+add Deductions bigint, Taxable_Pay bigint,Income_Tax bigint,Net_Pay bigint;
