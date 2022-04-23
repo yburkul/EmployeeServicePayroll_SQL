@@ -60,3 +60,5 @@ update employee_payroll set Deductions = 2000,Taxable_Pay = 1000, Income_Tax =20
 update employee_payroll set Deductions = 2000,Taxable_Pay = 1000, Income_Tax =200, Net_Pay = 21800 where Name = 'Neha';
 
 select * from employee_payroll where Name = 'Terissa';
+
+select * from employee_payroll;
